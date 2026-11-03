@@ -102,7 +102,7 @@ function renderTrend(sessions, skills) {
       'aria-label': select.value === 'minutes' ? 'روند زمان تمرین' : 'روند امتیاز مهارت' });
     for (let i = 0; i <= 4; i++) {
       const y = top + (height - top - bottom) * i / 4;
-      canvas.append(svg('line', { x1: left, y1: y, x2: width - right, y2: y, stroke: '#dfe7dd' }));
+      canvas.append(svg('line', { x1: left, y1: y, x2: width - right, y2: y, stroke: '#355052' }));
       const label = svg('text', { x: left - 7, y: y + 4, 'text-anchor': 'end' });
       label.textContent = num(max * (1 - i / 4));
       canvas.append(label);
@@ -114,11 +114,11 @@ function renderTrend(sessions, skills) {
     }));
     if (positions.length > 1) canvas.append(svg('polyline', {
       points: positions.map(p => p.x + ',' + p.y).join(' '),
-      fill: 'none', stroke: '#176b55', 'stroke-width': 3,
+      fill: 'none', stroke: '#a8e5bc', 'stroke-width': 3,
       'stroke-linecap': 'round', 'stroke-linejoin': 'round'
     }));
     for (const p of positions) {
-      const circle = svg('circle', { cx: p.x, cy: p.y, r: 5, fill: '#176b55' });
+      const circle = svg('circle', { cx: p.x, cy: p.y, r: 5, fill: '#a8e5bc' });
       const tip = svg('title');
       tip.textContent = p.date + ': ' + num(p.value) + (select.value === 'minutes' ? ' ساعت' : ' از ۵');
       circle.append(tip);
