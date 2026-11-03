@@ -19,7 +19,8 @@ function requireText(key) {
 }
 
 for (const key of ['id', 'date', 'kind', 'topic', 'mode', 'summary', 'evidence', 'nextFocus']) requireText(key);
-if (!/^\d{4}-\d{2}-\d{2}$/.test(session.date) || Number.isNaN(Date.parse(`${session.date}T00:00:00Z`))) {
+const parsedDate = new Date(`${session.date}T00:00:00Z`);
+if (!/^\d{4}-\d{2}-\d{2}$/.test(session.date) || Number.isNaN(parsedDate.getTime()) || parsedDate.toISOString().slice(0, 10) !== session.date) {
   throw new Error('date must be a valid YYYY-MM-DD date');
 }
 if (!['assessment', 'practice'].includes(session.kind)) throw new Error('kind must be assessment or practice');
