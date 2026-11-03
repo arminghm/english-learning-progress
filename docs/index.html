@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102b27" />
+    <title>English Interview Lab · داشبورد پیشرفت</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <div class="eyebrow">ENGLISH INTERVIEW LAB / 01</div>
+        <div class="hero-grid">
+          <div>
+            <h1>هر پاسخ، یک قدم<br /><em>روشن‌تر.</em></h1>
+            <p>داشبورد تمرین مکالمه و مصاحبهٔ مهندسی نرم‌افزار. پیشرفت از جلسه‌های ثبت‌شده و سنجش‌های مستقل محاسبه می‌شود.</p>
+          </div>
+          <div class="goal-card">
+            <span class="label">هدف این دوره</span>
+            <strong>مصاحبهٔ Senior Frontend<br />به زبان انگلیسی</strong>
+            <span id="profile-line">سطح خوداظهاری: متوسط · تمرین روزانه: ۶۰ دقیقه</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="summary" aria-label="خلاصهٔ پیشرفت">
+          <article class="stat"><span>جلسه‌های ثبت‌شده</span><strong id="session-count">—</strong><small>تمرین و سنجش</small></article>
+          <article class="stat"><span>زمان تمرین</span><strong id="total-hours">—</strong><small>ساعت ثبت‌شده</small></article>
+          <article class="stat"><span>قوت‌های تأییدشده</span><strong id="strength-count">—</strong><small>بر پایهٔ دو سنجش</small></article>
+          <article class="stat"><span>نیازمند تمرین</span><strong id="focus-count">—</strong><small>بر پایهٔ دو سنجش</small></article>
+        </section>
+
+        <section class="panel next-panel">
+          <div class="section-head"><div><span class="kicker">NEXT STEP</span><h2>قدم بعدی</h2></div><span class="pill">روزانه ۶۰ دقیقه</span></div>
+          <div id="next-step" class="next-copy">در حال بارگذاری…</div>
+        </section>
+
+        <section class="panel">
+          <div class="section-head"><div><span class="kicker">SKILL MAP</span><h2>نقشهٔ مهارت‌ها</h2></div><p class="hint">رتبه فقط پس از دو سنجش مستقل نمایش داده می‌شود.</p></div>
+          <div class="legend"><span><i class="dot strong"></i> قوت</span><span><i class="dot growing"></i> در حال رشد</span><span><i class="dot focus"></i> نیازمند تمرین</span><span><i class="dot unknown"></i> دادهٔ ناکافی</span></div>
+          <div id="skill-grid" class="skill-grid"></div>
+        </section>
+
+        <section class="two-col">
+          <section class="panel">
+            <div class="section-head"><div><span class="kicker">TRAJECTORY</span><h2>روند تمرین</h2></div></div>
+            <div id="trend" class="trend"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head"><div><span class="kicker">WEEKLY RHYTHM</span><h2>این هفته</h2></div></div>
+            <div id="week-progress" class="week-progress"></div>
+            <p class="muted">هدف: ۵ جلسهٔ اصلی، یک مصاحبهٔ آزمایشی و یک روز مرور.</p>
+          </section>
+        </section>
+
+        <section class="panel">
+          <div class="section-head"><div><span class="kicker">EVIDENCE LOG</span><h2>جلسه‌ها و شواهد</h2></div><span id="last-updated" class="hint"></span></div>
+          <div id="session-list" class="session-list"></div>
+        </section>
+      </main>
+      <footer>تمرینِ واقعی ← بازخورد ← تکرارِ مستقل ← پیشرفتِ قابل مشاهده</footer>
+    </div>
+  </body>
+</html>

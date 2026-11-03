@@ -1,0 +1,20 @@
+{
+  "profile": {
+    "target": "English speaking for Senior Frontend / software-engineering interviews",
+    "selfReportedLevel": "Intermediate",
+    "dailyMinutes": 60,
+    "startDate": "2026-11-03"
+  },
+  "skills": [
+    { "id": "fluency", "label": "روانی گفتار", "group": "speaking" },
+    { "id": "pronunciation", "label": "تلفظ", "group": "speaking" },
+    { "id": "listening", "label": "درک شنیداری", "group": "speaking" },
+    { "id": "grammar", "label": "دستور زبان", "group": "language" },
+    { "id": "vocabulary", "label": "واژگان شغلی", "group": "language" },
+    { "id": "answer_structure", "label": "ساختار پاسخ", "group": "interview" },
+    { "id": "technical_explanation", "label": "توضیح فنی", "group": "interview" },
+    { "id": "behavioral_story", "label": "داستان رفتاری", "group": "interview" },
+    { "id": "interaction", "label": "تعامل و پیگیری", "group": "interview" }
+  ],
+  "sessions": []
+}

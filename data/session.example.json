@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-03-baseline",
+  "date": "2026-11-03",
+  "kind": "assessment",
+  "minutes": 60,
+  "topic": "Baseline interview",
+  "mode": "text",
+  "summary": "Replace with a factual summary of the learner's independent answers.",
+  "evidence": "Replace with a short, non-sensitive example or a link to a committed evidence note.",
+  "ratings": {
+    "grammar": 3,
+    "vocabulary": 3,
+    "answer_structure": 3,
+    "technical_explanation": 3
+  },
+  "nextFocus": "Replace with one specific practice goal."
+}
